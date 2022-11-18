@@ -11,5 +11,29 @@ body {
 }
 
 .grid-container {
+    padding: 10px;
     background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 50px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.box-1 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.box-4 {
+    grid-column: span 3;
+    background-color: aqua;
+    grid-row: 2/4;
+}
+
+.box-grid {
+    padding: 1.5rem;
+    border: 2px solid rgb(146, 218, 135);
+    background-color: rgb(99, 99, 99);
 }
